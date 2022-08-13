@@ -20,6 +20,6 @@ app.listen(process.env.PORT, () => {
     console.log(`🎸 Rockin' on port: ${process.env.PORT}`)
 })
 
-//controllers'
+//controllers
 const bandsController = require('./controllers/bands_controller')
-app.use('./bands', bandsController)
+app.use('/bands', bandsController)
